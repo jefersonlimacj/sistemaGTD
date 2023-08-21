@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="initScreens.css" />
+    <script src="register.js" defer></script>
+    <title>Gerencia Táxi</title>
+  </head>
+  <body>
+    <div class="erro-login">
+      <p class="erro-txt">Login ou Senha incorreto, por favor verifique suas informações e tente novamente.</p>
+      <button class="erro-retornar" value="Ok">Ok</button>
+    </div>
+    <div class="backdrop-erro"></div>
+    <div class="main-out">
+      <div class="main-header">
+        <img
+          src="/assets/GT_Logo.png"
+          class="logo-Gt"
+          href="https://www.gerenciataxi.com.br"
+        />
+      </div>
+      <form class="login-form" id="login">
+        <h1 class="top-title">Login</h1>
+        <input
+          type="text"
+          id="email"
+          class="ent-email"
+          placeholder="|  Seu e-mail aqui"
+        />
+        <input
+          type="password"
+          id="senha"
+          class="ent-senha"
+          placeholder="|  Sua senha aqui"
+        />
+      </form>
+      <button class="entrar" id="entrar">Entrar</button>
+
+      <a href="" class="rec-senha">Esqueci minha senha</a>
+      <div class="main-footer">
+        <p class="txt-site">
+          Para ter acesso ao nosso sistema
+          <a href="https://www.gerenciataxi.com.br">Clique aqui</a> e conheça
+          mais sobre o Gerencia Táxi
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

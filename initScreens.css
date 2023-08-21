@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+  background-image: url('/assets/bgGTD.png');
+  background-size: cover;
+  background-position: top;
+  background-color: #1a1a1af9;
+}
+
+.main-out {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1a1a1af9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.erro-login {
+  visibility: hidden;
+  width: 25%;
+  height: 20%;
+  margin-top: -60%;
+  margin-left: calc(50% - 12.5%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #161010cc;
+  backdrop-filter: blur(5px);
+  border: 1.5px solid #ffffff30;
+  box-shadow: 15px 15px 30px #00000050;
+  border-radius: 15px;
+  color: #ffffff50;
+  transition: 500ms all ease-in-out;
+  z-index: 2;
+}
+
+.backdrop-erro {
+  visibility: hidden;
+  position: absolute;
+  background-color: #1a1a1a50;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+  transition: 500ms all ease-in-out;
+}
+
+.erro-txt {
+  text-align: center;
+}
+
+.erro-retornar {
+  width: 30%;
+  height: 35px;
+  background-color: #ff4f4f;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.erro-retornar:active {
+  background-color: #8a2727;
+}
+
+.login-form {
+  width: 70%;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+.top-title {
+  font-style: italic;
+  font-weight: 600;
+  margin: 35px 0;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  border-radius: 100px;
+  padding: 0 20px;
+  border: 1px solid #ffffff15;
+  background-color: #ffffff15;
+  color: white;
+}
+
+input:focus {
+  background-color: #ffffff30;
+}
+
+.entrar {
+  width: 25%;
+  height: 50px;
+  border-radius: 100px;
+  padding: 0 20px;
+  border: none;
+  margin: 50px 0;
+  background: linear-gradient(90deg, #00f9a0 0%, #0083fc 100%);
+  color: white;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  transition: 100ms all ease-in-out;
+  cursor: pointer;
+}
+
+.entrar:hover {
+  background: linear-gradient(90deg, #008959 0%, #00417e 80%);
+  transition: 500ms all ease-in-out;
+}
+
+.entrar:active {
+  transition: 500ms all ease-in-out;
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 25px #00000050;
+}
+
+.main-header {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 0 100px;
+}
+
+.logo-Gt {
+  width: 150px;
+  cursor: pointer;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+}
+
+.txt-site {
+  color: #ffffff50;
+  font-style: italic;
+}
+
+.txt-site a {
+  color: #0083fc;
+}
+
+.main-out a {
+  color: #0083fc;
+  font-style: italic;
+}
