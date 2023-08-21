@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="dashboard.js" defer></script>
+    <title>Gerencia Táxi</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/assets/GT_Logo_cz.png" class="logo-GT" />
+      </div>
+      <nav>
+        <div class="ent-busca">
+          <input type="text" name="" id="input-busca" />
+          <button class="btn-busca"><i class="fa-solid fa-search"></i></button>
+        </div>
+        <button class="btn-mod-tela">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+        <button class="btn-acoes">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <div class="list-acoes">
+          <ul>
+            <a href="#">
+              <li class="">
+                <span>Editar Perfil</span>
+                <i class="fa-solid fa-edit"></i></li></a
+            ><a href="#">
+              <li class="">
+                <span>Sobre</span>
+                <i class="fa-solid fa-quote-right"></i></li></a
+            ><a href="#">
+              <li class="">
+                <span>Sair</span>
+                <i class="fa-solid fa-right-from-bracket"></i></li
+            ></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <aside class="">
+      <div class="menu">
+        <div class="btn-menu-rec">
+          <i class="fa-solid fa-caret-left" id="btn-rec-menu"></i>
+        </div>
+        <div class="inf-usuario">
+          <div class="img-perfil"></div>
+          <span class="nome-user">Operador 01</span>
+          <span class="email-user">operacional@ckviagnes.com</span>
+          <div class="edit">
+            <i class="fa-solid fa-edit"></i>
+          </div>
+        </div>
+        <ul>
+          <a href="/pages/dasboard.html">
+            <li class="btn-ativo" href="#">
+              <div class="item-menu">
+                <div class="item-menu-hover"><div class="ind-linha"></div></div>
+                <span>Dashboard</span>
+              </div>
+              <i class="fa-solid fa-chart-simple"></i></li
+          ></a>
+          <a href="/pages/adminstrativo.html">
+            <li class="">
+              <div class="item-menu">
+                <div class="item-menu-hover"><div class="ind-linha"></div></div>
+                <span>Admnistrativo</span>
+              </div>
+              <i class="fa-solid fa-clipboard"></i></li
+          ></a>
+          <a href="#">
+            <li class="">
+              <div class="item-menu">
+                <div class="item-menu-hover"><div class="ind-linha"></div></div>
+                <span>Financeiro</span>
+              </div>
+              <i class="fa-solid fa-scale-balanced"></i></li
+          ></a>
+          <a href="#">
+            <li class="">
+              <div class="item-menu" href="#">
+                <div class="item-menu-hover"><div class="ind-linha"></div></div>
+                <span>Operacional</span>
+              </div>
+              <i class="fa-solid fa-car"></i></li
+          ></a>
+          <a href="#">
+            <li class="">
+              <div class="item-menu">
+                <div class="item-menu-hover"><div class="ind-linha"></div></div>
+                <span>Relatórios</span>
+              </div>
+              <i class="fa-solid fa-chart-line"></i></li
+          ></a>
+        </ul>
+      </div>
+      <div class="inf-gt">
+        <img
+          src="/assets/GT_Logo_cz.png"
+          alt=""
+          srcset=""
+          class="logo-inf-gt"
+        />
+        ® Todos os direiros Reservados
+      </div>
+    </aside>
+    <main>
+      <div class="main-int">
+        <div class="head-main-principal">
+          <div class="descr-main">
+            <h3 class="titulo-main">Painel Principal</h3>
+            <span class="subtituli-main">Dashboard</span>
+          </div>
+          <input type="date" name="" id="" />
+        </div>
+        <div class="spc-cards">
+          <div class="ladoA">
+            <div class="res-sup">
+              <div class="res-sup-a">
+                <div class="base-vdr viagens-geral">
+                  <div class="head-card">
+                    <div class="descr-card">
+                      <h3 class="titulo-card">Viagens</h3>
+                      <span class="subtitulo-card">Geral</span>
+                    </div>
+                    <select name="" id="">
+                      <option value="">Hoje</option>
+                      <option value="">Semana</option>
+                      <option value="">Mês</option>
+                    </select>
+                  </div>
+                  <h1 class="valor-total">40.012</h1>
+                  <div class="footer-card">
+                    <div class="ind-porcent resultado-negativo">
+                      <span>-25%</span>
+                    </div>
+                    <span>Semana Anterior</span>
+                  </div>
+                </div>
+                <div class="base-vdr viagens-extras">
+                  <div class="head-card">
+                    <div class="descr-card">
+                      <h3 class="titulo-card">Viagens</h3>
+                      <span class="subtitulo-card">Extras</span>
+                    </div>
+                    <select name="" id="">
+                      <option value="">Hoje</option>
+                      <option value="">Semana</option>
+                      <option value="">Mês</option>
+                    </select>
+                  </div>
+                  <h1 class="valor-total">9.350</h1>
+                  <div class="footer-card">
+                    <div class="ind-porcent resultado-positivo">
+                      <span>25%</span>
+                    </div>
+                    <span>Semana Anterior</span>
+                  </div>
+                </div>
+              </div>
+              <div class="res-sup-b">
+                <div class="base-vdr faturamento-bruto">
+                  <div class="head-card">
+                    <div class="descr-card">
+                      <h3 class="titulo-card">Faturamento</h3>
+                      <span class="subtitulo-card">Bruto</span>
+                    </div>
+                    <select name="" id="">
+                      <option value="">Hoje</option>
+                      <option value="">Semana</option>
+                      <option value="">Mês</option>
+                    </select>
+                  </div>
+                  <div class="spc-main">
+                    <span>R$</span>
+                    <h1 class="valor-total">789.402,53</h1>
+                  </div>
+                  <div class="footer-card">
+                    <div class="ind-porcent resultado-positivo">
+                      <span>25%</span>
+                    </div>
+                    <span>Semana Anterior</span>
+                  </div>
+                </div>
+                <div class="base-vdr faturamento-liquido">
+                  <div class="head-card">
+                    <div class="descr-card">
+                      <h3 class="titulo-card">Faturamento</h3>
+                      <span class="subtitulo-card">Líquido</span>
+                    </div>
+                    <select name="" id="">
+                      <option value="">Hoje</option>
+                      <option value="">Semana</option>
+                      <option value="">Mês</option>
+                    </select>
+                  </div>
+                <div class="spc-main">
+                  <span>R$</span>
+                  <h1 class="valor-total">1.320.120,40</h1>
+                </div>
+                <div class="footer-card">
+                  <div class="ind-porcent resultado-positivo">
+                    <span>25%</span>
+                  </div>
+                  <span>Semana Anterior</span>
+                </div>
+              </div>
+
+            </div>
+            </div>
+            <div class="res-mid">
+              <div class="base-vdr grafico-hist-faturamente">
+                <div class="head-card">
+                  <div class="descr-card">
+                    <h3 class="titulo-card">Faturamento</h3>
+                    <span class="subtitulo-card">Histórico</span>
+                  </div>
+                  <select name="" id="">
+                    <option value="">Hoje</option>
+                    <option value="">Semana</option>
+                    <option value="">Mês</option>
+                  </select>
+                </div>
+                <div class="area-grafico-faturamento-hist"></div>
+              </div>
+              <div class="base-vdr despesas-geral">
+                <div class="head-card">
+                  <div class="descr-card">
+                    <h3 class="titulo-card">Despesas</h3>
+                    <span class="subtitulo-card">Geral</span>
+                  </div>
+                  <select name="" id="">
+                    <option value="">Hoje</option>
+                    <option value="">Semana</option>
+                    <option value="">Mês</option>
+                  </select>
+                </div>
+                <div class="grafico-resumo-despesas"></div>
+                <div class="list-detalhes-despesas">
+                  <div class="top-list">
+                    <span>Tipo</span>
+                    <span>Valor</span>
+                  </div>
+                  <div class="item-list">
+                    <span>Repasse</span>
+                    <span>R$751.854,23</span>
+                  </div>
+                  <div class="item-list">
+                    <span>Imposto</span>
+                    <span>R$41.352,60</span>
+                  </div>
+                  <div class="item-list">
+                    <span>Despesas Fixas</span>
+                    <span>R$51.619,89</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ladoB">
+            <div class="base-vdr ranking-motoristas">
+              <div class="head-card">
+                <div class="descr-card">
+                  <h3 class="titulo-card">Despesas</h3>
+                  <span class="subtitulo-card">Geral</span>
+                </div>
+                <select name="" id="">
+                  <option value="">Hoje</option>
+                  <option value="">Semana</option>
+                  <option value="">Mês</option>
+                </select>
+              </div>
+              <div class="grafico-resumo-ranking"></div>
+              <div class="list-detalhes-motoristas">
+                <div class="top-list">
+                  <span>Nome</span>
+                  <span>Qnt. Viagens</span>
+                  <span>Status</span>
+                </div>
+                <div class="item-list">
+                  <div class="nome">
+                    <span>Fulano Silva Matos</span>
+                  </div>
+                  <div class="qnt">
+                    <span>30</span>
+                  </div>
+                  <div class="status">
+                    <div class="sinal-status ativo"></div>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="nome">
+                    <span>Fulano Silva</span>
+                  </div>
+                  <div class="qnt">
+                    <span>30</span>
+                  </div>
+                  <div class="status">
+                    <div class="sinal-status inativo"></div>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="nome">
+                    <span>Beltrano Darlan Oliveira</span>
+                  </div>
+                  <div class="qnt">
+                    <span>30</span>
+                  </div>
+                  <div class="status">
+                    <div class="sinal-status"></div>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="nome">
+                    <span>Fulano Silva</span>
+                  </div>
+                  <div class="qnt">
+                    <span>30</span>
+                  </div>
+                  <div class="status">
+                    <div class="sinal-status ativo"></div>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="nome">
+                    <span>Fulano Silva</span>
+                  </div>
+                  <div class="qnt">
+                    <span>30</span>
+                  </div>
+                  <div class="status">
+                    <div class="sinal-status inativo"></div>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="nome">
+                    <span>Fulano Silva</span>
+                  </div>
+                  <div class="qnt">
+                    <span>30</span>
+                  </div>
+                  <div class="status">
+                    <div class="sinal-status"></div>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="nome">
+                    <span>Fulano Silva</span>
+                  </div>
+                  <div class="qnt">
+                    <span>30</span>
+                  </div>
+                  <div class="status">
+                    <div class="sinal-status ativo"></div>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="nome">
+                    <span>Fulano Silva</span>
+                  </div>
+                  <div class="qnt">
+                    <span>30</span>
+                  </div>
+                  <div class="status">
+                    <div class="sinal-status ativo"></div>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="nome">
+                    <span>Fulano Silva</span>
+                  </div>
+                  <div class="qnt">
+                    <span>30</span>
+                  </div>
+                  <div class="status">
+                    <div class="sinal-status ativo"></div>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="nome">
+                    <span>Fulano Silva</span>
+                  </div>
+                  <div class="qnt">
+                    <span>30</span>
+                  </div>
+                  <div class="status">
+                    <div class="sinal-status"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
